@@ -1,0 +1,22 @@
+spring:
+  sleuth:
+    enabled: true
+  datasource:
+    name: micropass-monitor-zipkin
+    driver-class-name:  com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.99.100:3306/micropass-monitor-zipkin?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: 457420045
+    schema[0]: classpath:/zipkin.sql
+    initialize: true
+    continue-on-error: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9121/eureka/
+
+zipkin:
+  storage:
+    type: mysql
+
+

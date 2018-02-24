@@ -1,2 +1,2 @@
-# springcloud-micropass-localconfig
-本地运行springcloud-micropass配置维护
+# micropass-config-files
+管理配置文件
